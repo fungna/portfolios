@@ -1,0 +1,12 @@
+.services_wrapper {
+    background-color: $bg-dark-blue;
+    & .card {
+        cursor: pointer;
+        background-color: $cl-secondary;
+        transition: transform 0.85s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 1px 1px 10px 2px rgba($color: $cl-primary, $alpha: 0.2);
+        }
+    }
+}

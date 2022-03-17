@@ -1,0 +1,22 @@
+.footer_wrapper {
+    padding: 20px 0;
+    background-color: $bg-dark-blue;
+    & .footer_logo img {
+        width: 100px;
+    }
+    & .footer_social li {
+        margin: 6px;
+    }
+    & .footer_social .fab {
+        font-size: 20px;
+        line-height: 25px;
+        color: $cl-gray;
+        &:hover {
+            color: $cl-primary;
+        }
+    }
+    & .copyright_text p {
+        font-size: 12px;
+        margin: 0;
+    }
+}

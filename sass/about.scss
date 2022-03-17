@@ -1,0 +1,50 @@
+.about_wrapper {
+    & ul.nav-pills {
+        border: 1px solid $cl-gray;
+        border-radius: 50px;
+    }
+    & ul li .nav-link {
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        display: inline-block;
+        color: $cl-gray;
+        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+        border: 0;
+        &.active {
+            background-color: $cl-primary;
+        }
+    }
+    & .single_progress {
+        margin-top: 15px;
+        position: relative;
+        overflow: hidden;
+        & .progress {
+            height: 4px;
+            border-radius: 4px;
+            box-shadow: none;
+            background-color: white;
+            overflow: visible;
+        }
+        & .progress-bar {
+            background-image: $cl-gradient;
+        }
+        & .label_progress {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            color: $cl-gray;
+            font-size: 14px;
+        }
+    }
+    & .tab-pane li {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: $cl-gray;
+        font-weight: 300;
+        & a {
+            display: block;
+            color: $cl-white;
+        }
+    }
+}
